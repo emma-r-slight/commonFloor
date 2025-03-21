@@ -1,11 +1,52 @@
-import WalletConnectButton from "./components/wallet-connect-button";
+// app/page.tsx
+// import Header from "./components/header";
+import Sidebar from "./components/sidebar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1>CommonFloor - the body corporate DAO</h1>
-        <WalletConnectButton />
+    <div className="flex min-h-screen">
+      <Sidebar />
+      <main className="flex-1 ml-64 p-8">
+        {/* <Header /> */}
+        <div className="flex flex-col gap-[32px] items-start">
+          <h1 className="text-2xl font-bold">Body Corporate DAO Dashboard</h1>
+
+          {/* Stats Section */}
+          <section className="w-full mb-8">
+            <h2 className="text-xl font-semibold mb-4">Stats</h2>
+            <div className="bg-gray-200 h-32 rounded-lg w-full"></div>
+          </section>
+
+          {/* Latest Proposals Section */}
+          <section className="w-full mb-8">
+            <h2 className="text-xl font-semibold mb-4">Latest proposals</h2>
+            <div className="bg-gray-200 p-6 rounded-lg">
+              <div className="space-y-4">
+                {[1, 2, 3, 4].map((item) => (
+                  <div
+                    key={item}
+                    className="border-b border-gray-300 pb-4"
+                  ></div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Transactions Section */}
+          <section className="w-full">
+            <h2 className="text-xl font-semibold mb-4">Transactions</h2>
+            <div className="bg-gray-200 p-6 rounded-lg">
+              <div className="space-y-4">
+                {[1, 2, 3, 4].map((item) => (
+                  <div
+                    key={item}
+                    className="border-b border-gray-300 pb-4"
+                  ></div>
+                ))}
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   );
