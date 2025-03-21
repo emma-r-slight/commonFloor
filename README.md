@@ -20,16 +20,26 @@ Decentralized Autonomous Organization (DAO) for body corporate governance, vendo
 ### 1️⃣ Install dependencies
 ```bash
 npm install
-
+```
 ##  2️⃣ Configure .env
+```bash
 PRIVATE_KEY=0xyourprivatekey
 SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+```
 
 3️⃣ Compile contracts
+```bash
 npx hardhat compile
+```
 
 4️⃣ Deploy to Sepolia
+```bash
 npx hardhat run scripts/deploy.ts --network sepolia
+```
 
 5️⃣ Interact via Hardhat Console
+```bash
 npx hardhat console --network sepolia
+```
+
+``
