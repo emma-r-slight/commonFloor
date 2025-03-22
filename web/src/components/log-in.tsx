@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import WalletConnectButton from "./wallet-connect-button";
+import WalletConnectButton from "@/components/wallet-connect-button";
 import { useAccount } from "wagmi";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
@@ -21,8 +21,8 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen">
       {/* Left side - Building Image */}
-      <div className="hidden lg:block lg:w-1/2 relative">
-        <div className="absolute inset-0">
+      <div className="hidden md:block md:w-1/2 relative rounded-r-3xl overflow-hidden">
+        <div className="absolute inset-0 rounded-r-3xl overflow-hidden border-8 border-white">
           <Image
             src="/large-apartment.png"
             alt="Apartment building exterior"
@@ -33,34 +33,41 @@ export default function LoginPage() {
               objectFit: "cover",
               objectPosition: "center",
             }}
+            className="rounded-r-3xl"
           />
         </div>
       </div>
 
       {/* Right side - Login Content */}
-      <div className="flex-1 flex flex-col justify-center items-center p-8 lg:p-16">
-        <div className="w-full max-w-md space-y-16">
-          {/* Logo and Title */}
-          <div className="text-center mb-10">
-            <h1 className="text-4xl font-bold">Welcome to</h1>
-            <h1 className="text-5xl font-serif italic">CommonFloor</h1>
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-8 md:p-16">
+        <div className="w-full max-w-md h-full flex flex-col justify-between">
+          {/* Welcome Text */}
+          <div className="text-left">
+            <h1 className="text-5xl font-bold mb-10">Welcome to</h1>
           </div>
+          <div>
+            {/* Logo */}
+            <div>
+              <div className="relative h-24 w-full">
+                <Image
+                  src="/CommonFloorLogo.svg"
+                  alt="CommonFloor"
+                  fill
+                  style={{ objectFit: "contain", objectPosition: "left" }}
+                />
+              </div>
+            </div>
 
-          {/* Tagline */}
-          <div className="text-center">
-            <p className="text-xl font-serif italic text-gray-700">
+            {/* Tagline */}
+            <p className="text-xl font-serif italic text-gray-700 mt-4">
               Home is where the trust is
             </p>
+            <div className="pt-8">
+              <WalletConnectButton />
+            </div>
           </div>
 
-          {/* Wallet Connect Section */}
-          <div className="text-center pt-8">
-            <p className="text-gray-600 mb-6">
-              Please connect your wallet to access the body corporate DAO
-              features.
-            </p>
-            <WalletConnectButton />
-          </div>
+          {/* Login Button */}
         </div>
       </div>
     </div>

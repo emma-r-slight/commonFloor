@@ -13,15 +13,23 @@ import InvestmentSummary from "@/components/investment-summary";
 import { useAccount } from "wagmi";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
   const { isConnected } = useAccount();
   const router = useRouter();
 
-  if (!isConnected) {
-    return router.push("/");
-  }
+  // Use useEffect to handle navigation after rendering
+  useEffect(() => {
+    if (!isConnected) {
+      router.push("/");
+    }
+  }, [isConnected, router]);
 
+  // Return loading state or null while checking connection
+  if (!isConnected) {
+    return null; // Or return a loading component
+  }
   return (
     <div className="flex min-h-screen">
       <Sidebar />

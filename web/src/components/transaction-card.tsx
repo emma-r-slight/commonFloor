@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ChevronRight } from "lucide-react";
+import { ArrowUpCircle } from "lucide-react";
 import { CardItem } from "./card";
 
 const TRANSACTION_TYPES = {
@@ -55,13 +55,10 @@ const TransactionCard: React.FC<TransactionCardProps> = ({ transaction }) => {
     <CardItem>
       <div className="flex items-center justify-between ">
         <div className="flex items-center space-x-3">
-          <div
-            className={`w-10 h-10 rounded-full flex items-center justify-center ${transactionConfig.bgClass}`}
-          >
-            <ChevronRight
-              className={`w-5 h-5 ${transactionConfig.colorClass} ${transactionConfig.iconClass} transition-transform`}
-            />
-          </div>
+          <ArrowUpCircle
+            className={`w-10 h-10 ${transactionConfig.colorClass} ${transactionConfig.iconClass} transition-transform`}
+          />
+
           <div>
             <h3 className="font-semibold text-gray-900 capitalize">
               {transaction.type}

@@ -55,12 +55,12 @@ const Sidebar: React.FC<SidebarProps> = () => {
   return (
     <div className="w-64 h-screen bg-white p-4 flex flex-col fixed left-0 top-0 border-r border-gray-200">
       {/* Logo */}
-      <div className="mb-10 px-2">
+      <div className="mb-10 mt-5 px-2">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/CommonFloor.svg"
+            src="/CommonFloorLogo.svg"
             alt="CommonFloor"
-            width={122}
+            width={129}
             height={40}
           />
         </Link>
