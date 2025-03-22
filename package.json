@@ -6,8 +6,22 @@
     "hardhat": "^2.22.19"
   },
   "dependencies": {
+    "@daohaus/moloch-v3-hooks": "^0.5.5",
     "@openzeppelin/contracts": "^5.2.0",
+    "@sentry/node": "^9.8.0",
     "ethers": "^6.13.5",
-    "moloch": "github:MolochVentures/moloch"
+    "moloch": "github:MolochVentures/moloch",
+    "next": "^15.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "viem": "^2.23.13",
+    "wagmi": "^2.14.15"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "hardhat": "hardhat"
   }
 }
