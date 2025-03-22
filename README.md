@@ -29,10 +29,9 @@ Results of the survey can be found here: https://drive.google.com/file/d/1QFLN7T
 We then designed wireframes for UI on figma. Design ink here: https://www.figma.com/design/gdhDpavaugM4UK21yPFoLV/Common-Floor---Product-design?node-id=101-385&t=oTJKakxc8qjCzs1l-1
 
 ## Tech Stack
-- Solidity 0.8.x
 - TypeScript
-- Ethers.js v6
-- Sepolia testnet + Infura RPC
+- Next.js
+- Wagmi
 
 ## How to Run
 
