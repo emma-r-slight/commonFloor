@@ -1,4 +1,4 @@
-# CommonFloor DAO Hackathon Project 🏢
+![image](https://github.com/user-attachments/assets/dca6b883-c302-4c3b-aa39-235f5b3b0cb1)# CommonFloor DAO Hackathon Project 🏢
 
 Welcome to Commonfloor. We're making real-world-impact on disrupting current body corporate management by enhancing transparency in fund management and empowering every resident to have a voice and influence in decision-making.
 
@@ -25,6 +25,8 @@ Results of the survey can be found here: https://drive.google.com/file/d/1QFLN7T
 2. Transparency - Users can track where each dollar goes, anytime.
 3. Easy Access - One platform to stay informed and take actions.
 
+More details of Business plan & Product requirement document can be viewed here: https://docs.google.com/document/d/1kNfDVfCT8tA0URkJFFn0HaeF3yc1rBe8MyjJQZxptMk/edit?usp=sharing
+
 # Design
 We then designed wireframes for UI on figma. Design ink here: https://www.figma.com/design/gdhDpavaugM4UK21yPFoLV/Common-Floor---Product-design?node-id=101-385&t=oTJKakxc8qjCzs1l-1
 
@@ -32,6 +34,7 @@ We then designed wireframes for UI on figma. Design ink here: https://www.figma.
 - TypeScript
 - Next.js
 - Wagmi
+- Spolia Ethereum Network (On another repo https://github.com/HausDAO/dao-app-starter-vite)
 
 ## How to Run
 
