@@ -12,6 +12,7 @@ import CommunityProposals from "@/components/community-proposals";
 import InvestmentSummary from "@/components/investment-summary";
 import { useAccount } from "wagmi";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Home() {
   const { isConnected } = useAccount();
@@ -35,7 +36,10 @@ export default function Home() {
               <ArrowRightLeft />
             </div>
             <div className="flex gap-6 items-center">
-              <BellRing /> <Button variant="primary">Proposal</Button>
+              <BellRing />{" "}
+              <Button asChild variant="primary">
+                <Link href="/create-proposal"> Create Proposal</Link>
+              </Button>
             </div>
           </header>
           <section className="flex gap-8 w-full">
