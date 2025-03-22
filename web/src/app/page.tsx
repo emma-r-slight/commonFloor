@@ -1,6 +1,8 @@
 // app/page.tsx
 // import Header from "./components/header";
 import Sidebar from "./components/sidebar";
+import { mockTransactions } from "@/lib/mock-transactions";
+import { TransactionList } from "@/app/components/transaction-list";
 
 export default function Home() {
   return (
@@ -34,17 +36,7 @@ export default function Home() {
 
           {/* Transactions Section */}
           <section className="w-full">
-            <h2 className="text-xl font-semibold mb-4">Transactions</h2>
-            <div className="bg-gray-200 p-6 rounded-lg">
-              <div className="space-y-4">
-                {[1, 2, 3, 4].map((item) => (
-                  <div
-                    key={item}
-                    className="border-b border-gray-300 pb-4"
-                  ></div>
-                ))}
-              </div>
-            </div>
+            <TransactionList transactions={mockTransactions} limit={4} />
           </section>
         </div>
       </main>
