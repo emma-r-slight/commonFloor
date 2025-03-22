@@ -43,7 +43,7 @@ export default function WalletConnectButton() {
         <button
           onClick={handleConnect}
           disabled={isConnecting}
-          className="bg-blue-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-600 transition-colors disabled:bg-blue-300 disabled:cursor-not-allowed"
+          className="w-full py-4 bg-teal-600 text-white text-lg font-semibold rounded-md hover:bg-teal-700 transition-colors"
         >
           {isConnecting ? "Connecting..." : "Connect Wallet"}
         </button>

@@ -1,5 +1,5 @@
 // app/lib/mockData.ts
-import { Transaction } from "@/app/components/transaction-card";
+import { Transaction } from "@/components/transaction-card";
 
 // Sample transaction data based on the example image
 export const mockTransactions: Transaction[] = [
