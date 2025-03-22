@@ -11,6 +11,7 @@ module.exports = {
     "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
+  safelist: ["bg-teal10", "bg-cream"],
   theme: {
     container: {
       center: true,
@@ -54,6 +55,8 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        teal10: "hsla(174, 100%, 29%, 0.1) ",
+        cream: "hsla(46, 100%, 97%, 1)",
       },
       borderRadius: {
         lg: "var(--radius)",
