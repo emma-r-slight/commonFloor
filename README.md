@@ -25,6 +25,9 @@ Results of the survey can be found here: https://drive.google.com/file/d/1QFLN7T
 2. Transparency - Users can track where each dollar goes, anytime.
 3. Easy Access - One platform to stay informed and take actions.
 
+## User flow
+![image](https://github.com/user-attachments/assets/00424202-0e12-4c96-bc12-c91ee0d74b86)
+
 More details of Business plan & Product requirement document can be viewed here: https://docs.google.com/document/d/1kNfDVfCT8tA0URkJFFn0HaeF3yc1rBe8MyjJQZxptMk/edit?usp=sharing
 
 # Design
